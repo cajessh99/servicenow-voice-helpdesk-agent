@@ -4,7 +4,7 @@ A voice assistant that lets employees check on IT tickets and report new problem
 
 This is a portfolio project focused on **conversation design**: persona, flows, error recovery, and the split between what a language model should and shouldn't do.
 
-> **Status:** design complete, build in progress.
+> **Status:** design complete, ServiceNow connected to Claude, building the conversation next.
 
 ## What Athena can do
 
@@ -41,7 +41,7 @@ flowchart LR
 
 - [x] Conversation design
 - [x] Link ServiceNow scoped app to this repo
-- [ ] Connect ServiceNow to the Claude API
+- [x] Connect ServiceNow to the Claude API
 - [ ] Build Virtual Agent topics
 - [ ] Build the voice web page
 - [ ] Demo video and write-up

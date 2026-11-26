@@ -37,7 +37,7 @@ flowchart TD
 
 **Details**
 - Lists of two or three are summarised by Claude from each ticket's short description into a few words ("your laptop", "email").
-- Sam reads ticket state in plain words. Map ServiceNow states: New → "logged, not picked up yet"; In Progress → "being worked on by the network team"; On Hold → "waiting on something, here's the note".
+- Athena reads ticket state in plain words. Map ServiceNow states: New → "logged, not picked up yet"; In Progress → "being worked on by the network team"; On Hold → "waiting on something, here's the note".
 
 ## Flow 2: Report a new issue
 
@@ -73,7 +73,7 @@ Triggered by: the caller asking, frustration signals ("this is useless", repeate
 
 1. Claude writes a three-line summary: what the caller wanted, what was tried, current state.
 2. Virtual Agent starts a live agent transfer (or, on the PDI, creates an incident assigned to the service desk with the summary and transcript attached).
-3. Sam says what happens next and how long it might take. Never just "transferring".
+3. Athena says what happens next and how long it might take. Never just "transferring".
 
 ## Error handling
 
@@ -84,7 +84,7 @@ Triggered by: the caller asking, frustration signals ("this is useless", repeate
 | **Low-confidence ticket number** | "Was that 0 0 1, 0 0 4, 2?" | "Could you say just the last four digits?" | Find by description instead |
 | **ServiceNow error / timeout** | "I'm having trouble reaching the system. Let me try again." | Hand off with a note about the error | |
 | **Caller interrupts (barge-in)** | Stop speaking immediately and listen | | |
-| **Caller corrects Sam** | "Thanks, changing that to ..." then reconfirm | | |
+| **Caller corrects Athena** | "Thanks, changing that to ..." then reconfirm | | |
 
 ## Guardrails for Claude
 

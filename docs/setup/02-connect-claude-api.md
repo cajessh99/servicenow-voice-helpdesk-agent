@@ -46,7 +46,7 @@ ClaudeClient.prototype = {
 
     /**
      * Send one request to Claude.
-     * @param {string} system   Instructions for Claude (Sam's persona and rules).
+     * @param {string} system   Instructions for Claude (Athena's persona and rules).
      * @param {Array}  messages [{role: 'user'|'assistant', content: '...'}]
      * @param {Object} [schema] Optional JSON schema; when given, the reply is parsed JSON.
      * @returns {{ok: boolean, text: string, data: Object, error: string}}
@@ -139,7 +139,7 @@ var claude = new x_2244524_voice_0.ClaudeClient();
 
 // 1. Plain reply
 var r1 = claude.send(
-    'You are Sam, a brief and friendly IT help desk assistant. Reply in one sentence.',
+    'You are Athena, a brief and friendly IT help desk assistant. Reply in one sentence.',
     [{ role: 'user', content: 'Hi, who are you?' }]
 );
 gs.info('Reply: ' + (r1.ok ? r1.text : 'ERROR ' + r1.error));
@@ -162,7 +162,7 @@ var r2 = claude.send(
 gs.info('Intent: ' + (r2.ok ? JSON.stringify(r2.data) : 'ERROR ' + r2.error));
 ```
 
-You should see a one-sentence greeting from Sam, then something like `{"intent":"report_issue","summary":"VPN disconnects every 10 minutes"}`.
+You should see a one-sentence greeting from Athena, then something like `{"intent":"report_issue","summary":"VPN disconnects every 10 minutes"}`.
 
 If it fails, the error is in the output and in **System Logs > All** (search for `ClaudeClient`). Common causes:
 

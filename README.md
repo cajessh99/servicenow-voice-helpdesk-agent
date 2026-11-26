@@ -1,4 +1,4 @@
-# Sam: an IT Help Desk Voice Agent on ServiceNow
+# Athena: an IT Help Desk Voice Agent on ServiceNow
 
 A voice assistant that lets employees check on IT tickets and report new problems by talking, built on ServiceNow Virtual Agent with Claude for language understanding.
 
@@ -6,10 +6,10 @@ This is a portfolio project focused on **conversation design**: persona, flows, 
 
 > **Status:** design complete, build in progress.
 
-## What Sam can do
+## What Athena can do
 
 - **Check ticket status:** "Any update on my laptop ticket?"
-- **Report a new issue:** "My VPN keeps dropping." Sam asks a couple of follow-ups, confirms, and logs an incident.
+- **Report a new issue:** "My VPN keeps dropping." Athena asks a couple of follow-ups, confirms, and logs an incident.
 - **Hand off to a person**, with a summary so the caller never repeats themselves.
 
 ## How it works

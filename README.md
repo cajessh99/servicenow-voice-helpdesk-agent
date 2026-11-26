@@ -34,6 +34,8 @@ flowchart LR
 |---|---|
 | [`design/`](design/) | Conversation design: [overview](design/01-overview.md), [persona](design/02-persona.md), [flows](design/03-flows.md), [sample dialogues](design/04-sample-dialogues.md) |
 | [`docs/setup/`](docs/setup/) | How to set up the project on a ServiceNow developer instance |
+| [`docs/build/`](docs/build/) | Step-by-step build guides for each conversation |
+| [`servicenow-scripts/`](servicenow-scripts/) | Readable copies of the ServiceNow server scripts (`ClaudeClient`, `AthenaTickets`) |
 | [`voice-web/`](voice-web/) | The browser voice front end (coming soon) |
 | ServiceNow app | Committed by ServiceNow Studio to the [`sn_instances/dev194736`](../../tree/sn_instances/dev194736) branch (scope `x_2244524_voice_0`) |
 
@@ -43,5 +45,8 @@ flowchart LR
 - [x] Link ServiceNow scoped app to this repo
 - [x] Connect ServiceNow to the Claude API
 - [ ] Build Virtual Agent topics
+  - [ ] Check ticket status ([guide](docs/build/01-check-status-topic.md))
+  - [ ] Report a new issue
+  - [ ] Hand off to a person
 - [ ] Build the voice web page
 - [ ] Demo video and write-up

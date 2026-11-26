@@ -12,11 +12,16 @@ Never commit the key to GitHub or paste it into a chat or screenshot.
 
 ## 2. Store the key in ServiceNow
 
+> **First, switch the application picker (globe icon in the top bar) to Global.** If the Voice Helpdesk Agent app is selected, the credential can be captured as part of the app and committed to GitHub.
+
 1. Go to **Connections & Credentials > Credentials** and click **New**.
 2. Choose **API Key Credentials**.
 3. **Name:** `Anthropic API`
-4. **API Key:** paste the key. Click **Submit**.
-5. Open the record again and copy its **sys_id** (right-click the header bar > **Copy sys_id**).
+4. **API Key:** paste the key. Right-click the form header and choose **Save**.
+5. Right-click the header again and choose **Copy sys_id**.
+6. Switch the application picker back to **Voice Helpdesk Agent**.
+
+The key lives only in this encrypted record in your instance. The app stores just the record's sys_id, which is harmless on GitHub.
 
 ## 3. Add a system property for the credential
 

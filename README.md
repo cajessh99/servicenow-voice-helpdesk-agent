@@ -35,12 +35,12 @@ flowchart LR
 | [`design/`](design/) | Conversation design: [overview](design/01-overview.md), [persona](design/02-persona.md), [flows](design/03-flows.md), [sample dialogues](design/04-sample-dialogues.md) |
 | [`docs/setup/`](docs/setup/) | How to set up the project on a ServiceNow developer instance |
 | [`voice-web/`](voice-web/) | The browser voice front end (coming soon) |
-| ServiceNow app | Committed by ServiceNow Studio to the `sn_instances/<instance>` branch |
+| ServiceNow app | Committed by ServiceNow Studio to the [`sn_instances/dev194736`](../../tree/sn_instances/dev194736) branch (scope `x_2244524_voice_0`) |
 
 ## Roadmap
 
 - [x] Conversation design
-- [ ] Link ServiceNow scoped app to this repo
+- [x] Link ServiceNow scoped app to this repo
 - [ ] Connect ServiceNow to the Claude API
 - [ ] Build Virtual Agent topics
 - [ ] Build the voice web page
